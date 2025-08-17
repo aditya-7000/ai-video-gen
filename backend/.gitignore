@@ -1,0 +1,61 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env
+.env.*
+!.env.example
+.venv/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+.eggs/
+*.egg-info/
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage*
+.cache/
+.pytest_cache/
+
+# Type checkers
+.mypy_cache/
+.pytype/
+
+# Logs
+logs/
+*.log
+
+# IDE/editor
+.vscode/
+.idea/
+.DS_Store
+
+# Local runtime state
+instance/
+
+# Local media/output directories
+videos/
+hls/
+dash/
+
+# OS / misc
+Thumbs.db
+
+lucky-curve-469206-k0-2a547cfa4ae5.json

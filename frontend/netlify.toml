@@ -1,0 +1,18 @@
+[build]
+  command = "vite build"
+  publish = "dist"
+
+[dev]
+  command = "vite"
+  port = 5173
+
+# SPA fallback so client-side routes work on refresh
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

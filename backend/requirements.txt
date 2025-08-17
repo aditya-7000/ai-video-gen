@@ -1,0 +1,12 @@
+flask
+python-dotenv
+google-genai
+google-cloud-storage
+werkzeug
+openai==0.28
+requests
+pymongo[bson]
+PyJWT
+flask_cors
+gunicorn
+flask-limiter

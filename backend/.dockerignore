@@ -1,0 +1,38 @@
+# Python cache and venvs
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+ENV/
+
+# Build and dist
+build/
+dist/
+*.egg-info/
+
+# Git & IDE
+.git/
+.gitignore
+.vscode/
+.idea/
+.DS_Store
+
+# Environment files (use .env.example instead)
+.env
+.env.*
+!/.env.example
+
+# Local runtime/media artifacts
+videos/
+hls/
+dash/
+*.m4s
+*.ts
+*.m3u8
+*.log
+
+# Do not copy secrets/keys into the image
+*.pem
+*.key
+lucky-curve-*.json

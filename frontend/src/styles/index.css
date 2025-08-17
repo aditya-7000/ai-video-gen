@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Global dark background similar to ChatGPT */
+body {
+  background-color: var(--mantine-color-body);
+}
+
+/* Mantine dark scheme overrides */
+:root[data-mantine-color-scheme='dark'] {
+  /* Darker main page background (we also hardcode in App.jsx) */
+  --mantine-color-body: #121110;
+
+  /* Charcoal Espresso surfaces (higher contrast, neutral-warm) */
+  --mantine-color-default: #1E1C1A; /* primary surface */
+  --mantine-color-dark-7: #121110; /* deepest = background */
+  --mantine-color-dark-6: #262321; /* controls / hover */
+
+  /* Borders */
+  --mantine-color-dark-5: #2F2B28; /* border */
+  --mantine-color-dark-4: #3A3531;
+}
+
+/* Ensure Paper uses darker surface */
+.mantine-Paper-root {
+  background-color: var(--mantine-color-default);
+}
+
+/* Buttons: use deep dark surfaces */
+.mantine-Button-root {
+  background-color: var(--mantine-color-dark-6);
+  color: #ECE8E4;
+  border-color: var(--mantine-color-dark-5);
+}
+.mantine-Button-root:hover {
+  background-color: var(--mantine-color-dark-5);
+}
+/* Default and light variants a bit darker */
+.mantine-Button-root[data-variant='default'],
+.mantine-Button-root[data-variant='light'] {
+  background-color: var(--mantine-color-default);
+  color: #ECE8E4;
+}
+
+/* Inputs: darker fields with subtle borders */
+.mantine-Input-input {
+  background-color: var(--mantine-color-default);
+  border-color: var(--mantine-color-dark-5);
+  color: #ECE8E4;
+}
+.mantine-Input-input::placeholder {
+  color: #BDB6B0;
+}
+
+/* Hoverable row style for concise prompts */
+.idea-row {
+  transition: background-color 120ms ease, color 120ms ease;
+  border-radius: 6px;
+}
+.idea-row:hover {
+  background-color: var(--mantine-color-dark-6);
+}
+
+/* Ensure enhanced prompt button can wrap multi-line text */
+.wrap-button .mantine-Button-label {
+  white-space: normal;
+  line-height: 1.5;
+  display: block;
+  text-align: left;
+  word-break: break-word;
+}
+
+/* Badges: let colored badges keep their color; only style gray badges */
+.mantine-Badge-root[data-color='gray'] {
+  background-color: var(--mantine-color-default);
+  border: 1px solid var(--mantine-color-dark-5);
+  color: #ECE8E4;
+}
