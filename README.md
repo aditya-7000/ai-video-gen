@@ -5,7 +5,7 @@ A full‑stack web app for generating short cinematic videos from text prompts.
 - Frontend: React + Vite + Mantine UI, HLS playback with `hls.js`
 - Backend: Flask API, Google GenAI (Veo 2) video generation, Google Cloud Storage (GCS), MongoDB for job metadata, OpenAI for prompt improvement
 Live demo near the top Add a short “Live Demo” line right below the title/intro so it’s immediately visible. Example:
-Live Demo: stalwart-cranachan-44f836.netlify.app
+Live Demo: https://stalwart-cranachan-44f836.netlify.app ,
 API Base: https://ai-video-backend-723866435939.asia-south1.run.app
 Key paths:
 - Frontend: `frontend/`
